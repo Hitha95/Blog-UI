@@ -5,8 +5,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import {Divider, Button} from '@material-ui/core';
-import ListItemText from '@material-ui/core/ListItemText';
-import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,9 +33,7 @@ const Users = (props) => {
             alert(err.message)
         })
     },[])
-    const handleClick = (urlRoute) =>{
-        props.history.push(urlRoute)
-    }
+
     return(
         <List className={classes.root}>
             
